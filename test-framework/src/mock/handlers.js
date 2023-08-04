@@ -1,5 +1,4 @@
 import { rest } from 'msw';
-import 'whatwg-fetch';
 
 export const handlers = [
   // Match a GET request to a third-party server.
