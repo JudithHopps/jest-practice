@@ -11,12 +11,12 @@ test('3초 후에 받아온 이름은 Mike', () => {
   fn.getName(callback);
 });
 
-test('3초 후에 받아온 이름은 Tom', () => {
-  function callback(name) {
-    expect(name).toBe('Tom');
-  }
-  fn.getName(callback);
-});
+// test('3초 후에 받아온 이름은 Tom', () => {
+//   function callback(name) {
+//     expect(name).toBe('Tom');
+//   }
+//   fn.getName(callback);
+// });
 
 test('done : 3초 후에 받아온 이름은 Mike', (done) => {
   function callback(name) {
@@ -26,13 +26,13 @@ test('done : 3초 후에 받아온 이름은 Mike', (done) => {
   fn.getName(callback);
 });
 
-test('done : 3초 후에 받아온 이름은 Tom', (done) => {
-  function callback(name) {
-    expect(name).toBe('Tom');
-    done();
-  }
-  fn.getName(callback);
-});
+// test('done : 3초 후에 받아온 이름은 Tom', (done) => {
+//   function callback(name) {
+//     expect(name).toBe('Tom');
+//     done();
+//   }
+//   fn.getName(callback);
+// });
 
 test('done : 3초 후에 받아온 이름은 Mike', (done) => {
   function callback(name) {
@@ -47,11 +47,11 @@ test('done : 3초 후에 받아온 이름은 Mike', (done) => {
 });
 
 // promise && return
-test('3초 후에 받아오는 나이는 30', () => {
-  fn.getAge().then((age) => {
-    expect(age).toBe(31); // 처음에는 통과 : []
-  });
-});
+// test('3초 후에 받아오는 나이는 30', () => {
+//   fn.getAge().then((age) => {
+//     expect(age).toBe(31); // 처음에는 통과 : []
+//   });
+// });
 
 test('return : 3초 후에 받아오는 나이는 30', () => {
   return fn.getAge().then((age) => {

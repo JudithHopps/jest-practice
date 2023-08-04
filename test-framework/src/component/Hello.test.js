@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+// render : 특정 컴포넌트 render
 import Hello from './Hello';
+import { render, screen } from '@testing-library/react';
 
 const user = {
   name: 'Judith',
